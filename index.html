@@ -2,20 +2,34 @@
 <html>
 <head>
     <title>LudaCraft</title>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.1.min.css">
     <style type="text/css">
     html, body {
         height: 100%;
     }
     body {
         padding: 60px;
-        background: #a1cade url(bg-full.jpg) center center no-repeat;
+        background: #a1cade url(bg-base-day.jpg) center center no-repeat;
         background-size: cover;
     }
     .container {
         background-color: rgba(255, 255, 255, 0.8);
         border-radius: 15px;
         box-shadow: 0 0 30px 40px rgba(255, 255, 255, 0.8);
+    }
+    @media (prefers-color-scheme: dark) {
+        body {
+            background: #333 url(bg-village-night.jpg) center center no-repeat;
+            color: #f5f5f5;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 30px 40px rgba(0, 0, 0, 0.8);
+        }
+        code {
+            color: #e897ab;
+            background-color: #4f0319;
+        }
     }
     </style>
     <link rel="icon" href="icon.jpg" type="image/jpeg">
@@ -25,14 +39,14 @@
 
         <h1>
             Welcome to LudaCraft
-            <!--<small>A Private Server</small>-->
+            <small>A small Minecraft server community</small>
         </h1>
         <br>
 
         <h2>Survival Server</h2>
-        <p class="lead">The vanilla survival Minecraft server is available at <code>mc.ludacraft.com</code>. It's currently running Minecraft 1.16.4, with no whitelist. Feel free to drop in and play!</p>
+        <p class="lead">The vanilla survival Minecraft server is available at <code>mc.ludacraft.com</code>. It's currently running Minecraft 1.17.1, with no whitelist. Feel free to drop in and play!</p>
         <p>
-            <a class="btn btn-default" href="http://server.ludacraft.com:8123/">View the Live Map</a>
+            <a class="btn btn-default" href="http://mc.ludacraft.com:8123/">View the Live Map</a>
         </p>
         <br>
 
